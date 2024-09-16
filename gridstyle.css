@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('img_22.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    color: white;
+}
+
+.navitems {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.navitems a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.btn {
+    justify-self: end;
+    text-align: center;
+    padding: 15px 20px;
+    width: 150px;
+    border: 1px solid white;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.center {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: start;
+    align-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.center .box {
+    padding: 10px 15px;
+    text-align: center;
+    width: 30%;
+    border-radius: 40px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: rgba(255, 255, 255, 0.80);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+.heading h2 {
+    color: white;
+    font-size: 62px;
+}
+
+.heading h1 {
+    color: white;
+    font-size: 92px;
+}
+
+.explorebtn {
+    text-align: center;
+    padding: 15px 20px;
+    width: 200px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+    color: white;
+    font-size: 14px;
+    padding: 50px;
+}
+
+.leftbox, .rightbox {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    max-width: 300px;
+}
+
+.ri-compass-discover-fill, .ri-group-2-fill {
+    font-size: 50px;
+    color: white;
+}
